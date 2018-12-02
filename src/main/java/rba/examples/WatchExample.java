@@ -57,19 +57,19 @@ public class WatchExample {
 
 					switch (item.type) {
 					case "ADDED":
-						System.out.printf("Namespace %s Version %s added\n", meta.getName(), meta.getResourceVersion());
+						System.out.printf("ADDED: Namespace %s Version %s\n", meta.getName(), meta.getResourceVersion());
 						System.out.printf("\tAnnotations: %s\n", meta.getAnnotations());
 						System.out.printf("\tLabels: %s\n", meta.getLabels());
 						break;
 
 					case "MODIFIED":
-						System.out.printf("Namespace %s Version %s modified\n", meta.getName(), meta.getResourceVersion());
+						System.out.printf("MODIFIED: Namespace %s Version %s\n", meta.getName(), meta.getResourceVersion());
 						System.out.printf("\tAnnotations: %s\n", meta.getAnnotations());
 						System.out.printf("\tLabels: %s\n", meta.getLabels());
 						break;
 
 					case "DELETED":
-						System.out.printf("Namespace %s Version %s deleted\n", meta.getName(), meta.getResourceVersion());
+						System.out.printf("DELETED: Namespace %s Version %s\n", meta.getName(), meta.getResourceVersion());
 						break;
 
 					default:
